@@ -1,0 +1,2 @@
+SELECT department.name FROM department WHERE department_id=(SELECT department_id FROM majorin GROUP BY department_id HAVING count(*)>1)
+-- I didn't know how to get the count to be along side this query. I can do two seperate queries thought
