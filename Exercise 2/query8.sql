@@ -1,0 +1,1 @@
+SELECT student_id, count(*) FROM majorin GROUP BY student_id
